@@ -1,0 +1,18 @@
+\begin{table}[t]
+\caption{Top-1 move-matching accuracy (percent) by time-pressure bucket, 23M models.}
+\label{tab:accuracy}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lccccc}
+\hline
+\textbf{Model} & \textbf{Overall} & \textbf{Comf.} & \textbf{Mod.} & \textbf{Press.} & \textbf{Crit.} \\
+  & ($>$50\%) & (20--50\%) & (5--20\%) & ($<$5\%) \\
+\hline
+Time-conditioned & 56.19 & 54.76 & 59.41 & 59.60 & 59.05 \\
+Time-blind       & 55.46 & 54.18 & 58.60 & 58.45 & 56.61 \\
+\hline
+$\Delta$ (pp)   & +0.73 & +0.58 & +0.81 & +1.15 & +2.45 \\
+95\% CI (overall) & {\scriptsize[0.69,0.77]} &  &  &  & \\
+\hline
+\end{tabular}
+\end{table}

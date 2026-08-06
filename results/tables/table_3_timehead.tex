@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Move-conditional thinking-time head, 23M models. Metrics on the human's
+actual move; the time-blind baseline keeps the head but sees no clock.}
+\label{tab:timehead}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lcc}
+\hline
+\textbf{Metric} & \textbf{Time-cond.} & \textbf{Time-blind} \\
+\hline
+MAE (s)            & 2.33 & 3.45 \\
+MedAE (s)          & 0.94 & 1.91 \\
+RMSE (s)           & 6.15 & 7.32 \\
+Top-1 bin acc (\%) & 38.3 & 33.6 \\
+Top-3 bin acc (\%) & 70.8 & 66.9 \\
+Top-5 bin acc (\%) & 81.6 & 79.0 \\
+\hline
+\end{tabular}
+\end{table}

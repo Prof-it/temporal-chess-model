@@ -1,0 +1,18 @@
+# Inference only: everything needed to play the model through the UCI engine.
+#
+#     pip install -r requirements-engine.txt
+#     python download_assets.py --engine
+#
+# The engine runs exported ONNX weights, so this deliberately does NOT pull in
+# torch or the training stack. Use requirements.txt for training or evaluation.
+#
+# For GPU inference, replace onnxruntime with onnxruntime-gpu (needs a matching
+# CUDA / cuDNN 9.x runtime). Without it the engine runs on CPU by itself:
+#     pip install onnxruntime-gpu
+
+numpy>=2.0
+python-chess>=1.11
+onnxruntime>=1.18
+
+# Used by download_assets.py to fetch the weights
+huggingface_hub>=0.24

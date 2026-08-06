@@ -1,0 +1,44 @@
+# Reproduction dependencies: training, dataset building, and the evaluation
+# harness. Versions are the ones the paper's results were produced with; lower
+# bounds are given rather than exact pins so the install stays resolvable.
+#
+# PyTorch is intentionally NOT pinned to a CUDA build here -- install the wheel
+# that matches your platform first, then this file:
+#
+#   CUDA 13.0 : pip install torch --index-url https://download.pytorch.org/whl/cu130
+#   CPU only  : pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# The move-quality evaluations additionally need a Stockfish binary on PATH
+# (see REPRODUCE.md); it is a system package, not a Python dependency.
+#
+# This file covers everything: training, evaluation AND running the engine.
+# For inference alone, requirements-engine.txt is much lighter (no torch).
+
+torch>=2.6
+
+# Data
+numpy>=2.0
+pandas>=2.2
+pyarrow>=17.0
+zstandard>=0.22          # Lichess .pgn.zst streaming
+requests>=2.31           # build_dataset/http_zstd.py
+
+# Chess
+python-chess>=1.11
+
+# Training / evaluation utilities
+tqdm>=4.66
+matplotlib>=3.8          # figures.py, paper_figures.py
+tensorboard>=2.16        # training curves
+psutil>=5.9
+
+# Inference runtime. Swap in onnxruntime-gpu for GPU (needs CUDA / cuDNN 9.x);
+# without it the engine falls back to CPU on its own.
+onnxruntime>=1.18
+
+# Only needed to re-export .pt checkpoints to ONNX (scripts/export_onnx.py)
+onnx>=1.16
+onnxscript>=0.1
+
+# Weight downloads from Hugging Face
+huggingface_hub>=0.24

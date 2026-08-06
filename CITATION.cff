@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Temporal Conditioning for Human Behavioral Cloning in Chess"
+abstract: >-
+  A time-aware chess transformer that extends a Chessformer-style architecture
+  with learned temporal conditioning tokens encoding player clock state, time
+  control and recent tempo, together with behavioral heads for thinking time and
+  resignation. Temporal conditioning yields modest overall move-matching gains
+  that concentrate sharply under time pressure, and lets the sampled policy
+  reproduce the human move-quality degradation that time-blind behavioral cloning
+  models systematically underestimate.
+authors:
+  - family-names: Dziwniel
+    given-names: Victor
+    affiliation: "IU International University of Applied Sciences"
+  - family-names: Lu
+    given-names: Tianxiang
+    orcid: "https://orcid.org/0009-0006-4462-1636"
+    affiliation: "IU International University of Applied Sciences"
+license: AGPL-3.0
+repository-code: "https://github.com/Prof-it/temporal-chess-model"
+keywords:
+  - behavioral cloning
+  - chess
+  - transformers
+  - temporal modeling
+  - human-AI alignment
+preferred-citation:
+  type: conference-paper
+  title: "Temporal Conditioning for Human Behavioral Cloning in Chess"
+  authors:
+    - family-names: Dziwniel
+      given-names: Victor
+    - family-names: Lu
+      given-names: Tianxiang
+      orcid: "https://orcid.org/0009-0006-4462-1636"
+  collection-title: "2026 IEEE Gaming, Entertainment and Media Conference (GEM)"
+  publisher:
+    name: IEEE
+  year: 2026

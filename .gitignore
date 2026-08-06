@@ -1,0 +1,28 @@
+# Model weights and exports (hosted on Hugging Face; see download_assets.py)
+checkpoints/
+*.pt
+*.onnx
+*.pb.gz
+
+# Data (hosted / rebuilt; see REPRODUCE.md)
+data/
+staging/
+
+# Pipeline outputs. results/ is committed, but reruns write here first.
+eval_results/
+runs/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+tools/

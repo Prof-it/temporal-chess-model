@@ -1,0 +1,277 @@
+{
+  "eval_set": "testset_2026-05",
+  "n_shards": 7,
+  "n_positions": 1485359,
+  "checkpoints": {
+    "cond_s67": "checkpoints/archive/chessformer_maia3-23m_elo-endpoints_time-tokens_tempotok_s67_step250000.pt",
+    "blind_s67": "checkpoints/archive/chessformer_23m_elo-endpoints_time-blind_s67_step250000.pt",
+    "cond_s68": "checkpoints/archive/chessformer_23m_elo-endpoints_time-tokens_tempotok_s68_d43_step250000.pt",
+    "blind_s68": "checkpoints/archive/chessformer_23m_elo-endpoints_time-blind_s68_d43_step250000.pt",
+    "cond_s69": "checkpoints/archive/chessformer_23m_elo-endpoints_time-tokens_tempotok_s69_d44_step250000.pt",
+    "blind_s69": "checkpoints/archive/chessformer_23m_elo-endpoints_time-blind_s69_d44_step250000.pt"
+  },
+  "runs": {
+    "cond_s67": {
+      "n": 1485359,
+      "top1_overall": 0.5514498515173772,
+      "top1_by_bucket": {
+        "Comfortable": 0.5382163653676134,
+        "Moderate": 0.5809792018234018,
+        "Pressured": 0.5837381499146205,
+        "Critical": 0.5753122240444052
+      },
+      "wdl_accuracy": 0.6459300411550339,
+      "time_mae_overall_s": 2.4541078541436327,
+      "time_mae_critical_s": 0.6447274066824398
+    },
+    "blind_s67": {
+      "n": 1485359,
+      "top1_overall": 0.5449800351295545,
+      "top1_by_bucket": {
+        "Comfortable": 0.5335089222581332,
+        "Moderate": 0.5748464061598253,
+        "Pressured": 0.570224636401107,
+        "Critical": 0.5489256128842354
+      },
+      "wdl_accuracy": 0.605124417733356,
+      "time_mae_overall_s": 4.310486233348742,
+      "time_mae_critical_s": 3.1614091316772455
+    },
+    "cond_s68": {
+      "n": 1485359,
+      "top1_overall": 0.5517130875431462,
+      "top1_by_bucket": {
+        "Comfortable": 0.5382640233660358,
+        "Moderate": 0.5814869198682124,
+        "Pressured": 0.5842092092092092,
+        "Critical": 0.5782347252007906
+      },
+      "wdl_accuracy": 0.6451787076390286,
+      "time_mae_overall_s": 2.400209813518817,
+      "time_mae_critical_s": 0.6466551248012484
+    },
+    "blind_s68": {
+      "n": 1485359,
+      "top1_overall": 0.5459225682141489,
+      "top1_by_bucket": {
+        "Comfortable": 0.5336275809480829,
+        "Moderate": 0.5758618422494466,
+        "Pressured": 0.5748248248248248,
+        "Critical": 0.5568100584500232
+      },
+      "wdl_accuracy": 0.6052833018819019,
+      "time_mae_overall_s": 3.610317180809256,
+      "time_mae_critical_s": 2.373715798706437
+    },
+    "cond_s69": {
+      "n": 1485359,
+      "top1_overall": 0.5512795223242327,
+      "top1_by_bucket": {
+        "Comfortable": 0.5380918710043875,
+        "Moderate": 0.5809645912321842,
+        "Pressured": 0.5825310604722369,
+        "Critical": 0.5762163071359488
+      },
+      "wdl_accuracy": 0.6460714211177231,
+      "time_mae_overall_s": 2.4110477617648916,
+      "time_mae_critical_s": 0.6430227335629205
+    },
+    "blind_s69": {
+      "n": 1485359,
+      "top1_overall": 0.5453785919767544,
+      "top1_by_bucket": {
+        "Comfortable": 0.5336003478061273,
+        "Moderate": 0.5751532285753943,
+        "Pressured": 0.5717629394099982,
+        "Critical": 0.5532357764601993
+      },
+      "wdl_accuracy": 0.6051345163021196,
+      "time_mae_overall_s": 3.908511828404351,
+      "time_mae_critical_s": 2.6550393174251443
+    }
+  },
+  "paired_deltas": {
+    "s67": {
+      "overall": 0.0064698163878227355,
+      "by_bucket": {
+        "Comfortable": 0.004707443109480236,
+        "Moderate": 0.006132795663576496,
+        "Pressured": 0.013513513513513487,
+        "Critical": 0.026386611160169826
+      },
+      "time_mae_overall_s": -1.8563783792051094,
+      "time_mae_critical_s": -2.5166817249948057
+    },
+    "s68": {
+      "overall": 0.005790519328997323,
+      "by_bucket": {
+        "Comfortable": 0.004636442417952913,
+        "Moderate": 0.00562507761876585,
+        "Pressured": 0.009384384384384381,
+        "Critical": 0.021424666750767374
+      },
+      "time_mae_overall_s": -1.2101073672904388,
+      "time_mae_critical_s": -1.7270606739051884
+    },
+    "s69": {
+      "overall": 0.005900930347478295,
+      "by_bucket": {
+        "Comfortable": 0.004491523198260183,
+        "Moderate": 0.005811362656789942,
+        "Pressured": 0.010768121062238678,
+        "Critical": 0.022980530675749566
+      },
+      "time_mae_overall_s": -1.4974640666394596,
+      "time_mae_critical_s": -2.012016583862224
+    }
+  },
+  "delta_summary": {
+    "overall": {
+      "mean": 0.006053755354766118,
+      "min": 0.005790519328997323,
+      "max": 0.0064698163878227355,
+      "range": 0.0006792970588254121,
+      "values": [
+        0.0064698163878227355,
+        0.005790519328997323,
+        0.005900930347478295
+      ]
+    },
+    "by_bucket": {
+      "Comfortable": {
+        "mean": 0.004611802908564444,
+        "min": 0.004491523198260183,
+        "max": 0.004707443109480236,
+        "range": 0.00021591991122005272,
+        "values": [
+          0.004707443109480236,
+          0.004636442417952913,
+          0.004491523198260183
+        ]
+      },
+      "Moderate": {
+        "mean": 0.005856411979710763,
+        "min": 0.00562507761876585,
+        "max": 0.006132795663576496,
+        "range": 0.0005077180448106455,
+        "values": [
+          0.006132795663576496,
+          0.00562507761876585,
+          0.005811362656789942
+        ]
+      },
+      "Pressured": {
+        "mean": 0.011222006320045516,
+        "min": 0.009384384384384381,
+        "max": 0.013513513513513487,
+        "range": 0.0041291291291291055,
+        "values": [
+          0.013513513513513487,
+          0.009384384384384381,
+          0.010768121062238678
+        ]
+      },
+      "Critical": {
+        "mean": 0.023597269528895588,
+        "min": 0.021424666750767374,
+        "max": 0.026386611160169826,
+        "range": 0.004961944409402452,
+        "values": [
+          0.026386611160169826,
+          0.021424666750767374,
+          0.022980530675749566
+        ]
+      }
+    }
+  },
+  "arm_overlap": {
+    "overall": {
+      "cond": {
+        "min": 0.5512795223242327,
+        "max": 0.5517130875431462,
+        "values": [
+          0.5514498515173772,
+          0.5517130875431462,
+          0.5512795223242327
+        ]
+      },
+      "blind": {
+        "min": 0.5449800351295545,
+        "max": 0.5459225682141489,
+        "values": [
+          0.5449800351295545,
+          0.5459225682141489,
+          0.5453785919767544
+        ]
+      },
+      "overlaps": false,
+      "gap": 0.005356954110083856
+    },
+    "Critical": {
+      "cond": {
+        "min": 0.5753122240444052,
+        "max": 0.5782347252007906,
+        "values": [
+          0.5753122240444052,
+          0.5782347252007906,
+          0.5762163071359488
+        ]
+      },
+      "blind": {
+        "min": 0.5489256128842354,
+        "max": 0.5568100584500232,
+        "values": [
+          0.5489256128842354,
+          0.5568100584500232,
+          0.5532357764601993
+        ]
+      },
+      "overlaps": false,
+      "gap": 0.018502165594382003
+    }
+  },
+  "monotonicity": {
+    "s67": {
+      "deltas_in_bucket_order": [
+        0.004707443109480236,
+        0.006132795663576496,
+        0.013513513513513487,
+        0.026386611160169826
+      ],
+      "monotonic": true
+    },
+    "s68": {
+      "deltas_in_bucket_order": [
+        0.004636442417952913,
+        0.00562507761876585,
+        0.009384384384384381,
+        0.021424666750767374
+      ],
+      "monotonic": true
+    },
+    "s69": {
+      "deltas_in_bucket_order": [
+        0.004491523198260183,
+        0.005811362656789942,
+        0.010768121062238678,
+        0.022980530675749566
+      ],
+      "monotonic": true
+    },
+    "holds_in_all_pairs": true
+  },
+  "stability": {
+    "overall": {
+      "level_range_cond": 0.00043356521891346755,
+      "level_range_blind": 0.0009425330845943547,
+      "delta_range": 0.0006792970588254121,
+      "level_over_delta": 1.387512388503654
+    },
+    "Critical": {
+      "level_range_cond": 0.002922501156385371,
+      "level_range_blind": 0.007884445565787823,
+      "delta_range": 0.004961944409402452,
+      "level_over_delta": 1.5889830508474634
+    }
+  }
+}

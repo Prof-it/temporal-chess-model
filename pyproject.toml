@@ -1,0 +1,13 @@
+# Lint configuration. CI runs `ruff check` with these settings.
+#
+# The selection is deliberately bug-focused rather than style-focused: E9
+# (syntax/runtime errors) and F (pyflakes: undefined names, unused imports,
+# broken f-strings). Formatting is not enforced -- this is research code, and a
+# whitespace diff is not worth a red build.
+
+[tool.ruff]
+line-length = 100
+exclude = ["tools", "venv", ".venv"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]
