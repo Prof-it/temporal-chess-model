@@ -7,9 +7,6 @@
 
 ONNX weights land in ``inference/``, checkpoints in ``checkpoints/``, and the
 test set in ``data/testset_2026-05/``.
-
-While the Hugging Face repo is private, authenticate first with ``hf auth login``
-or by setting ``HF_TOKEN``.
 """
 
 from __future__ import annotations
