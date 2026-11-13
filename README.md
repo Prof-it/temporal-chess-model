@@ -106,11 +106,14 @@ tests/                 smoke tests and the checkpoint regression gate
 
 ```bibtex
 @inproceedings{dziwniel2026temporal,
-  author    = {Victor Dziwniel and Tianxiang Lu},
+  author    = {Dziwniel, Victor and Lu, Tianxiang},
   title     = {Temporal Conditioning for Human Behavioral Cloning in Chess},
-  booktitle = {2026 IEEE Gaming, Entertainment and Media Conference (GEM)},
+  booktitle = {2026 IEEE Gaming, Entertainment, and Media Conference (GEM)},
   year      = {2026},
-  publisher = {IEEE}
+  pages     = {1--6},
+  publisher = {IEEE},
+  doi       = {10.1109/GEM72276.2026.11747060},
+  url       = {https://doi.org/10.1109/GEM72276.2026.11747060}
 }
 ```
 
